@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calculator</title>
+
+    <!-- Link to Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/calculator.jpg"
+    />
+
+    <!-- Link to External Style sheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Title and Theme -->
+      <div class="grid-item title">
+        <h2>Calculator <i class="fas fa-calculator"></i></h2>
+      </div>
+
+      <!-- User Input Section -->
+      <input
+        class="grid-item user-input math-input"
+        type="text"
+        name=""
+        id=""
+        value=""
+      />
+
+      <!-- Calculate and Operators Section -->
+      <div class="grid-item calculator">
+        <button class="math-number">7</button>
+        <button class="math-number">8</button>
+        <button class="math-number">9</button>
+        <button class="delete math-manipulator">DEL</button>
+        <button class="math-number">4</button>
+        <button class="math-number">5</button>
+        <button class="math-number">6</button>
+        <button class="math-operator">+</button>
+        <button class="math-number">1</button>
+        <button class="math-number">2</button>
+        <button class="math-number">3</button>
+        <button class="math-operator">-</button>
+        <button class="dot">.</button>
+        <button class="math-number">0</button>
+        <button class="math-operator">/</button>
+        <button class="math-operator">x</button>
+        <button class="reset math-manipulator">RESET</button>
+        <button class="calculate math-manipulator">=</button>
+      </div>
+    </div>
+
+    <!-- Script to font-awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Script for external JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>

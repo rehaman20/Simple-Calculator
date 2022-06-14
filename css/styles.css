@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: #3a4764;
+  border: 5px solid #3b4d74;
+  border-radius: 20px;
+  width: 900px;
+  height: 600px;
+  margin: 50px auto;
+  padding: 50px 250px;
+  display: grid;
+  grid-template-columns: 200px 200px 1fr;
+  grid-template-rows: 50px 90px 1fr;
+  row-gap: 15px;
+}
+
+/* Title and Theme */
+
+.grid-item {
+  grid-column: 1 / -1;
+  border-radius: 15px;
+}
+.title {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+h2::first-letter {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #ebdce3;
+}
+
+/* User Input Section */
+.user-input {
+  background-color: #182034;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Calculate and Operators Section*/
+.calculator {
+  background-color: #232c43;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(5, 40px);
+  column-gap: 30px;
+  row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+}
+
+.delete {
+  background-color: #637097;
+  color: #fff;
+}
+
+.reset {
+  grid-column: 1 / span 2;
+  grid-row: 5;
+  margin-right: 10px;
+  background-color: #637097;
+  color: #fff;
+}
+
+.calculate {
+  grid-column: 3 / span 2;
+  grid-row: 5;
+  margin-right: 10px;
+  background-color: #d03f2f;
+  color: #fff;
+}
+
+button {
+  border-radius: 10px;
+  background-color: rgb(251, 253, 255);
+  font-weight: bold;
+  font-size: 20px;
+  color: #444;
+}
+
+.calculator button:hover {
+  background-color: #ced4da;
+  color: #444;
+}
